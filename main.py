@@ -39,12 +39,11 @@ NON_NUMERIC_FIELDS = {
     PKT_CLASS_INDEX: PKT_CLASS
 }
 
+MAX_OUT = 1000
 IN_FILE_PATH = 'in/in-headless.txt'
-OUT_FILE_PATH = 'out/out-{pkt_class}.txt'
+OUT_FILE_PATH = 'out-' + str(MAX_OUT) + '/out-{pkt_class}.txt'
 IN_CSV_DELIMITER = ','
 OUT_CSV_DELIMITER = ' '
-
-MAX_OUT = 500
 
 
 def clean_row(row):
